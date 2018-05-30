@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('Stage 1') {
       steps {
-        sh 'echo \'Hello World\''
+              C:
+              cd C:\Program Files (x86)\Java\jdk1.8.0_112\bin
+              javac F:\git\java\HelloWorld.java
+              java -classpath F:\git\java HelloWorld
       }
     }
   }
